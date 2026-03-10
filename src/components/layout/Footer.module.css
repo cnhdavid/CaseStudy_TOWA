@@ -1,0 +1,33 @@
+.footer {
+  border-top: 3px solid rgba(0, 0, 0, 0.1);
+  padding: 3rem 1.5rem 2rem;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.columnHeading {
+  font-family: 'Press Start 2P', cursive;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.55rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.navLink {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.5rem;
+  display: block;
+  padding: 0.35rem 0;
+  transition: color 0.2s;
+}
+
+.navLink:hover {
+  color: #0a0a0a;
+}
+
+.bottomBar {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 1.25rem;
+  margin-top: 1.5rem;
+}
