@@ -40,8 +40,6 @@ const Footer = () => {
     <footer className={`has-background-white ${styles.footer}`}>
       <div className="container">
         <div className="columns is-variable is-6">
-
-          {/* Column 1 — Logo + tagline */}
           <div className="column is-one-third">
             <Logo />
             <p className="has-text-grey-light is-size-7">
@@ -49,7 +47,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Column 2 — Navigation */}
           <div className="column is-one-third">
             <p className={`has-text-dark has-text-weight-semibold ${styles.columnHeading}`}>
               Navigation
@@ -57,10 +54,7 @@ const Footer = () => {
             <ul>
               {NAV_ITEMS.map((item) => (
                 <li key={item.label}>
-                  <a
-                    className={`has-text-grey-dark ${styles.navLink}`}
-                    href={item.href}
-                  >
+                  <a className={`has-text-grey-dark ${styles.navLink}`} href={item.href}>
                     {item.label}
                   </a>
                 </li>
@@ -68,7 +62,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 3 — Contact */}
           <div className="column is-one-third">
             <p className={`has-text-dark has-text-weight-semibold ${styles.columnHeading}`}>
               Contact
@@ -78,10 +71,8 @@ const Footer = () => {
             <p className="has-text-grey-dark is-size-7">+43 (123) 444-5555</p>
             <p className="has-text-grey-dark is-size-7">david@pokemon.com</p>
           </div>
-
         </div>
 
-        {/* Bottom bar */}
         <div className={styles.bottomBar}>
           <p className="has-text-grey-dark is-size-7 has-text-centered">
             © {new Date().getFullYear()} Pokémon Co. All rights reserved.
