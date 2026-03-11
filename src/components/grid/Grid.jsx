@@ -5,13 +5,7 @@ const Grid = ({ items, title }) => (
     {title && <h2 className="title is-4 has-text-white mb-4">{title}</h2>}
     <div className="columns is-multiline">
       {items.map((item) => (
-        <Card
-          key={item.id}
-          image={item.image}
-          title={item.title}
-          text={item.text}
-          url={item.url}
-        />
+        <Card key={item.id} {...item} />
       ))}
     </div>
   </div>
